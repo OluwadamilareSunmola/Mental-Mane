@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - emergency
+  - abuse_report
+  - emotional_support
+  - safety_check
+  - resource_request
+
+responses:
+  utter_greet:
+  - text: "Hello! I'm here to listen and support you. How are you feeling today?"
+  - text: "Hi there! I'm here to help. How are you doing?"
+
+  utter_goodbye:
+  - text: "Take care of yourself. Remember, you're not alone."
+  - text: "Goodbye! Please reach out if you need support."
+
+  utter_affirm:
+  - text: "I understand. Would you like to tell me more about what's happening?"
+  - text: "Thank you for sharing that with me. How can I support you?"
+
+  utter_deny:
+  - text: "That's okay. You can share when you're ready."
+  - text: "I understand. Take your time."
+
+  utter_mood_great:
+  - text: "I'm glad to hear you're doing well!"
+  - text: "That's wonderful to hear!"
+
+  utter_mood_unhappy:
+  - text: "I'm sorry to hear that. Would you like to talk about what's bothering you?"
+  - text: "I'm here to listen. What's been on your mind?"
+
+  utter_emergency:
+  - text: "I'm concerned about your safety. Are you in immediate danger? If so, please call emergency services right away."
+  - text: "Your safety is the most important thing. Do you need help getting to a safe place?"
+
+  utter_abuse_report:
+  - text: "I'm here to listen and support you. Would you like to tell me more about what's happening?"
+  - text: "Thank you for sharing this with me. How can I help you stay safe?"
+
+  utter_emotional_support:
+  - text: "Your feelings are valid and important. Would you like to talk more about how you're feeling?"
+  - text: "I'm here to listen. What kind of support would be most helpful right now?"
+
+  utter_safety_check:
+  - text: "Are you in a safe place right now? Do you have someone you can reach out to?"
+  - text: "Your safety is my priority. Do you have a plan to stay safe?"
+
+  utter_resource_request:
+  - text: "Here are some resources that might help: [National Domestic Violence Hotline: 1-800-799-7233, Crisis Text Line: Text HOME to 741741]"
+  - text: "Would you like information about local support services or shelters?"
+
+  utter_bot_challenge:
+  - text: "I'm an AI assistant here to provide support and resources. How can I help you today?"
+  - text: "I'm here to listen and help connect you with resources. What's on your mind?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true 
